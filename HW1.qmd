@@ -1,0 +1,45 @@
+---
+title: "ST 558 - Data Science"
+subtitle: "Homework 1"
+author: "Lee Bennett"
+format: html
+editor: visual
+---
+
+## Data Science and Statistics
+
+A data scientist plays many roles in the process of turning raw data into information to make decisions. This usually includes steps such as
+
+-   Creating code and computing processes to obtain the data that will serve as the input for the analysis
+
+-   "Wrangling" that data by cleaning it to remove noise and restructuring it into a form that is suitable for analysis
+
+-   Applying analytical methods, including data visualization and modeling, to gain insight into the data and to make predictions and decisions based on those insights
+
+As someone who was trained as a statistician before the term "data science" was widely known, the primary similarity that I see between these two fields is that both are focused on turning data into information for decision-making. The data scientists that I've worked with, however, usually have far more training with the tools that are needed to work with large and messy datasets, including coding skills to manage data storage environments, extract data from a wide range of sources (often as it's being generated in real time), and create tools such as dashboards for delivering results to end users.
+
+On the other hand, my work in statistics for health outcomes research has typically involved datasets which are structured nicely (such as clinical trial data) and situations where there is a scientific question to be answered through pre-specified descriptive analysis and/or modeling. Database managers and programmers do the data extraction work, and statisticians like me perform the analysis and report the results. That's changing, though, as health outcomes research is moving towards technology that generates huge datasets  (e.g., data from activity trackers that take hundreds of measurements per minute).
+
+As I begin this course, I'm looking forward to gaining a better understanding of the data science perspective and to learning new skills that I will inevitably need.
+
+## Iris Petal Width
+
+```{r}
+y <- density(iris$Petal.Width)
+```
+
+We can use following functions in R to determine the class, type, and structure of y:
+
+```{r}
+class(y)
+typeof(y)
+str(y)
+```
+
+Let's have a look at the density of iris petal widths:
+
+```{r}
+#| echo: false
+
+plot(y,main='Density Plot of Iris Petal Widths')
+```
